@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">
+      <h2>Coordinate List</h2>
+    </div>
+    <div class="panel-body">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>position</th>
+            <th>x</th>
+            <th>y</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let coordinate of coordinates | async">
+            <td>{{coordinate.position}}</td>
+            <td>{{coordinate.x}}</td>
+            <td>{{coordinate.y}}</td>
+            <td><button (click)="deleteCoordinate(coordinate.id)" class="btn btn-danger">Delete</button>
+                <button (click)="coordinateDetail(coordinate.id)" class="btn btn-info" style="margin-left: 10px">Details</button>
+                <button (click)="updateCoordinate(coordinate.id)" class="btn btn-info" style="margin-left: 10px">Update</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -1,0 +1,18 @@
+<h2>Coordinate Details</h2>
+
+<hr/>
+<div *ngIf="coordinate">
+  <div>
+    <label><b>position: </b></label> {{coordinate.position}}
+  </div>
+  <div>
+    <label><b>x: </b></label> {{coordinate.x}}
+  </div>
+  <div>
+    <label><b>y: </b></label> {{coordinate.y}}
+  </div>
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Coordinate List</button><br>
