@@ -13,6 +13,7 @@ import {CoordinateListComponent} from "./coordinates/coordinate-list/coordinate-
 import {CoordinateDetailsComponent} from "./coordinates/coordinate-details/coordinate-details.component";
 import {UpdateCoordinateComponent} from "./coordinates/update-coordinate/update-coordinate.component";
 import {CreateCoordinateComponent} from "./coordinates/create-coordinate/create-coordinate.component";
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {CreateCoordinateComponent} from "./coordinates/create-coordinate/create-
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

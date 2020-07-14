@@ -5,6 +5,7 @@ import { CoordinateService } from "../coordinate.service";
 import { Coordinate } from "../coordinate";
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-coordinate-list',
   templateUrl: './coordinate-list.component.html',
@@ -13,6 +14,8 @@ import { Router } from '@angular/router';
 export class CoordinateListComponent implements OnInit {
 
   coordinates: Observable<Coordinate[]>;
+  p: number = 1;
+  count: number = 5;
 
   constructor(private coordinateService: CoordinateService,
     private router: Router) {}

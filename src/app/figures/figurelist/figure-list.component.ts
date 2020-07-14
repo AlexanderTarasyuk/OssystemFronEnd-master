@@ -13,6 +13,8 @@ import { Router } from '@angular/router';
 export class FigureListComponent implements OnInit {
 
   figures: Observable<Figure[]>;
+  p: number = 1;
+  count: number = 5;
 
   constructor(private employeeService: FigureService,
     private router: Router) {}
